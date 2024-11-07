@@ -43,6 +43,7 @@ theme: /Start
         q: *
         script:
             $session.countsNoMatch += 1; 
+            log("CONTEXT PATH " + $session.contextPath)
         if: $session.countsNoMatch < 2
             random:
                 a: Извините, не понял(а) Вас, используйте, пожалуйста, кнопки
