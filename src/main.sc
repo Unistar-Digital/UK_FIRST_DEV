@@ -5,7 +5,7 @@ theme: /Start
         script:
             $jsapi.startSession(); 
             $session.countsNoMatch = 0;
-        a: Здравствуйте, я электронный помощник  компании "УК Первая"😊
+        a: Здравствуйте, я электронная помощница компании "УК Первая"😊
         timeout: /Disclamer/Disclamer1 || interval = "1 second"
     
     state: MainMenu
@@ -40,7 +40,7 @@ theme: /Start
         timeout: /Start/Timeout || interval = "1 hour"
 
     state: NoMatch
-        event!: /noMatch
+        q: *
         script:
             $session.countsNoMatch += 1; 
         if: $session.countsNoMatch < 2
