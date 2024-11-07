@@ -40,7 +40,7 @@ theme: /Start
         timeout: /Start/Timeout || interval = "1 hour"
 
     state: NoMatch
-        q: *
+        q!: *
         script:
             $session.countsNoMatch += 1; 
             log("CONTEXT PATH " + $session.contextPath)
