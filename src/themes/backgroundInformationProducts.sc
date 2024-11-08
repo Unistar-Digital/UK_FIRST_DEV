@@ -240,11 +240,11 @@ theme: /
     state: StockStonksFunds
         a: Какой фонд в категории «Биржевые фонды акций» Вас интересует? 👇
         inlineButtons:
-            "Фонд Индекс МосБиржи IPO-SIPO" -> /OpenStocksFunds/IPO-SIPOFund
-            "Фонд Акции средней и малой капитализации - SBSC" -> /OpenStocksFunds/SBSCFund
-            "Фонд Топ Российских акций — SBMX" -> /OpenStocksFunds/SMBXFund
-            "Фонд Ответственные инвестиции — SBRI" -> /OpenStocksFunds/SBRIFund
-            "Фонд Халяльные инвестиции — SBHI" -> /OpenStocksFunds/SBHIFunds
+            "Фонд Индекс МосБиржи IPO-SIPO" -> /StockStonksFunds/IPO-SIPOFund
+            "Фонд Акции средней и малой капитализации - SBSC" -> /StockStonksFunds/SBSCFund
+            "Фонд Топ Российских акций — SBMX" -> /StockStonksFunds/SMBXFund
+            "Фонд Ответственные инвестиции — SBRI" -> /StockStonksFunds/SBRIFund
+            "Фонд Халяльные инвестиции — SBHI" -> /StockStonksFunds/SBHIFunds
             "Назад" -> /ExchangeTradedFunds
         timeout: /Start/Timeout || interval = "1 hour"
         
