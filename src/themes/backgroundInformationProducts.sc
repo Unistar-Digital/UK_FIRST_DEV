@@ -47,7 +47,7 @@ theme: /
                 {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-               {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                "Назад" -> /OpenBondsFunds
            
             timeout: /Start/WhatElse || interval = "30 seconds" 
