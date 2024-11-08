@@ -73,12 +73,20 @@ theme: /
 
         state: IncomePayingBondFund
             a: По теме облигаций с выплатой дохода я могу предложить Вам следующие виды документов
-            buttons:
-                {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "hthttps://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-                {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
-                {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-                {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-                "Назад" -> /OpenBondsFunds
+            #buttons:
+            #    {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+            #    {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            #    {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+            #   {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+            #   "Назад" -> /OpenBondsFunds
+            script:
+                $reactions.buttons([
+                    {text: "Информационный лист Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"},
+                    {text: "Презентация Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"},
+                    {text: "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}, 
+                    {text: "Презентация_Сбер1 Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"},
+                    {text: "Назад", transition: "/OpenBondsFunds"}
+                ]) 
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: ConservativeIncomeBondFund
