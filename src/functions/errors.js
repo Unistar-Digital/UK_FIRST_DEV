@@ -29,4 +29,4 @@ init:
             user: "just-alarm@unistar.ru",
             password: "$SMTP_password"})
         })
-        $reactions.transition({value: "/Start/Operator", deferred: true});
+    $reactions.transition({value: "/Start/Operator", deferred: true});
