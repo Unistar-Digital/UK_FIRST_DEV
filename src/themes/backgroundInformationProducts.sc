@@ -57,6 +57,7 @@ theme: /
                 {"text": "Презентация Фонд консервативный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд консервативный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация_Сбер1 Фонд консервативный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                "Назад" -> /OpenBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: RussianBondFund
@@ -66,6 +67,7 @@ theme: /
                 {"text": "Презентация Фонд российских облигаций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд российских облигаций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация_Сбер1 Фонд российских облигаций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                "Назад" -> /OpenBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: CurrencyBond
@@ -75,6 +77,7 @@ theme: /
                 {"text": "Презентация Фонд Валютные сбережения", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Валютные сбережения", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация_Сбер1 Фонд Валютные сбережения", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                "Назад" -> /OpenBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: CumulativeFunds
@@ -83,7 +86,8 @@ theme: /
                 {"text": "Информационный лист Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-                {"text": "Презентация_Сбер1 Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                {"text": "Презентация_Сбер1 Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds" 
     
     # ОТКРЫТЫЕ ФОНДЫ АКЦИЙ
@@ -94,6 +98,7 @@ theme: /
             "Фонд акций с выплатой дохода" -> /OpenStocksFunds/IncomeStocksFunds
             "Фонд российских акций" -> /OpenStocksFunds/RussianFund
             "Фонд Природные ресурсы" -> /OpenStocksFunds/NaturalSourcesFunds
+            "Назад" -> /OpenEndedMutualFunds
         timeout: /Start/Timeout || interval = "1 hour"
         
         state: NewHopesFund
@@ -103,6 +108,7 @@ theme: /
                 {"text": "Презентация Фонд Новые возможности", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Новые возможности", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Новые возможности", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenStocksFunds
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: IncomeStocksFunds
@@ -112,6 +118,7 @@ theme: /
                 {"text": "Презентация Фонд акций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд акций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд акций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenStocksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: RussianFund
@@ -121,6 +128,7 @@ theme: /
                 {"text": "Презентация Фонд российских акций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд российских акций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд российских акций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenStocksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: NaturalSourcesFunds
@@ -130,6 +138,7 @@ theme: /
                 {"text": "Презентация Фонд Природные ресурсы", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Природные ресурсы", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Природные ресурсы", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenStocksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
     
     #ОТКРЫТЫЕ ФОНДЫ СМЕШАННЫХ ИНВЕСТИЦИЙ
@@ -140,6 +149,7 @@ theme: /
             "Фонд взвешенный с выплатой дохода" -> /MixedInvestmentsFunds/WeightedSectorFund
             "Фонд Локальный" -> /MixedInvestmentsFunds/LocalFund
             "Фонд Сбалансированный" -> /MixedInvestmentsFunds/BalancedFund
+            "Назад" -> /OpenEndedMutualFunds
         timeout: /Start/Timeout || interval = "1 hour"
         
         state: MixedInvestmentsIncome
@@ -149,6 +159,7 @@ theme: /
                 {"text": "Презентация Фонд смешанный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд смешанный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд смешанный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /MixedInvestmentsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: WeightedSectorFund
@@ -158,6 +169,7 @@ theme: /
                 {"text": "Презентация Фонд взвешенный с выплатой дохода", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд взвешенный с выплатой дохода", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд взвешенный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /MixedInvestmentsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: LocalFund
@@ -167,6 +179,7 @@ theme: /
                 {"text": "Презентация Фонд Локальный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Локальный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Локальный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /MixedInvestmentsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: BalancedFund
@@ -176,6 +189,7 @@ theme: /
                 {"text": "Презентация Фонд Сбалансированный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Сбалансированный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Сбалансированный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /MixedInvestmentsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
    
     #ЗАКРЫТЫЕ ФОНДЫ
@@ -184,6 +198,7 @@ theme: /
         buttons:
             "Фонд Современный Арендный бизнес 2" -> /ClosedFunds/RentBusiness2
             "Фонд Современный 6" -> /ClosedFunds/Modern6
+            "Назад" -> /OpenEndedMutualFunds
         timeout: /Start/Timeout || interval = "1 hour"
     
         state: RentBusiness2
@@ -193,6 +208,7 @@ theme: /
                 {"text": "Презентация Фонд Современный Арендный бизнес 2", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Современный Арендный бизнес 2", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Современный Арендный бизнес 2", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /ClosedFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: Modern6
@@ -202,6 +218,7 @@ theme: /
                 {"text": "Презентация Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Современный 6", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                 "Назад" -> /ClosedFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
     
     
@@ -214,6 +231,7 @@ theme: /
             "Биржевые фонды денежного рынка" -> /OpenMoneyFunds
             "Биржевые фонды товарных рынков" -> /SBGDFund
             "Биржевые смарт-фонды" -> /SmartFund5
+            "Назад" -> /Products
         timeout: /Start/Timeout || interval = "1 hour"
         
     # БИРЖЕВЫЕ ФОНДЫ АКЦИЙ
@@ -225,6 +243,7 @@ theme: /
             "Фонд Топ Российских акций - SBMX" -> /OpenStocksFunds/SMBXFund
             "Фонд Ответственные инвестиции - SBRI" -> /OpenStocksFunds/SBRIFund
             "Фонд Халяльные инвестиции - SBHI" -> /OpenStocksFunds/SBHIFunds
+            "Назад" -> /ExchangeTradedFunds
         timeout: /Start/Timeout || interval = "1 hour"
         
         state: IPO-SIPOFund
@@ -234,6 +253,7 @@ theme: /
                 {"text": "Презентация Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockStonksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBSCFund
@@ -243,6 +263,7 @@ theme: /
                 {"text": "Презентация Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockStonksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SMBXFund
@@ -252,6 +273,7 @@ theme: /
                 {"text": "Презентация Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Топ Российских акций - SBMXC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockStonksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBRIFund
@@ -261,6 +283,7 @@ theme: /
                 {"text": "Презентация Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockStonksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBHIFund
@@ -270,6 +293,7 @@ theme: /
                 {"text": "Презентация Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockStonksFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
     #БИРЖЕВЫЕ ФОНДЫ ОБЛИГАЦИЙ
@@ -282,6 +306,7 @@ theme: /
             "Фонд Государственные облигации - SBGB" -> /OpenBondsFunds/SBGBFund
             "Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)" -> /OpenBondsFunds/SBCBFund
             "Фонд Облигации с переменным купоном - SBFR" -> /OpenBondsFunds/SBFRFund
+            "Назад" -> /ExchangeTradedFunds
         timeout: /Start/Timeout || interval = "1 hour"
         
         state: SBBYFund
@@ -291,6 +316,7 @@ theme: /
                 {"text": "Презентация Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBLBFund
@@ -300,6 +326,7 @@ theme: /
                 {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBRBFund
@@ -309,6 +336,7 @@ theme: /
                 {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBGBFund
@@ -318,6 +346,7 @@ theme: /
                 {"text": "Презентация Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBCBFund
@@ -327,6 +356,7 @@ theme: /
                 {"text": "Презентация Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBFRFund
@@ -336,6 +366,7 @@ theme: /
                 {"text": "Презентация Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Облигации с переменным купоном - SBFR)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /StockBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
     #БИРЖЕВЫЕ ФОНДЫ ДЕНЕЖНЫХ РЫНКОВ
@@ -344,6 +375,7 @@ theme: /
         buttons:
             "Фонд Сберегательный - SBMM" -> /OpenMoneyFunds/SBMMFund
             "Фонд Сберегательный в юанях - SBCN" -> /OpenMoneyFunds/SBCNFund
+            "Назад" -> /ExchangeTradedFunds
         timeout: /Start/Timeout || interval = "1 hour"
         
         state: SBMMFund
@@ -353,6 +385,7 @@ theme: /
                 {"text": "Презентация Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenMoneyFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBCNFund
@@ -362,6 +395,7 @@ theme: /
                 {"text": "Презентация Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /OpenMoneyFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
     
     #БИРЖЕВЫЕ ФОНДЫ ТОВАРНЫХ РЫНКОВ
@@ -372,6 +406,7 @@ theme: /
             {"text": "Презентация Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Информационный лист_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Презентация_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            "Назад" -> /ExchangeTradedFunds
         timeout: /Start/WhatElse || interval = "30 seconds"
     
     #БИРЖЕВЫЕ СМАРТ-ФОНДЫ
@@ -382,6 +417,7 @@ theme: /
             {"text": "Презентация Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Информационный лист_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Презентация_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            "Назад" -> /ExchangeTradedFunds        
         timeout: /Start/WhatElse || interval = "30 seconds"
     
     #ИНДИВИДУАЛЬНЫЙ ИНВЕСТИЦИОННЫЙ СЧЕТ (ИИС) 
@@ -392,6 +428,7 @@ theme: /
             {"text": "Презентация Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Информационный лист_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Презентация_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            "Назад" -> /Products
         timeout: /Start/WhatElse || interval = "30 seconds"
     
     #ДОВЕРИТЕЛЬНОЕ УПРАВЛЕНИЕ 
@@ -401,6 +438,7 @@ theme: /
             "Халяльные инвестиции" -> /RubleStrategies/HalalInvestments
             "Модельные портфели 5" -> /RubleStrategies/ModelPortfolio5
             "Дивидендные акции" -> /RubleStrategies/Dividends
+            "Назад" -> /Products
         timeout: /Start/Timeout || interval = "1 hour"
         
         state: HalalInvestments 
@@ -410,6 +448,7 @@ theme: /
                 {"text": "Презентация Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /RubleStrategies
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: ModelPortfolio5 
@@ -419,6 +458,7 @@ theme: /
                 {"text": "Презентация Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /RubleStrategies
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: Dividends 
@@ -428,6 +468,7 @@ theme: /
                 {"text": "Презентация Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Дивидендные акции5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                "Назад" -> /RubleStrategies
             timeout: /Start/WhatElse || interval = "30 seconds"
 
     #ДОКУМЕНТЫ ДЛЯ СТАРТА ИНВЕСТИРОВАНИЯ
