@@ -54,7 +54,7 @@ theme: /
         
         state: ConservativeIncomeBondFund
             a: По теме консервативного фонда с выплатой дохода могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд консервативный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация Фонд консервативный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд консервативный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
@@ -64,7 +64,7 @@ theme: /
         
         state: RussianBondFund
             a: По теме фонда российских облигаций могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд российских облигаций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация Фонд российских облигаций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд российских облигаций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
@@ -74,7 +74,7 @@ theme: /
         
         state: CurrencyBond
             a: По теме фонда валютных сбережений могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Валютные сбережения", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация Фонд Валютные сбережения", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Валютные сбережения", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
@@ -84,7 +84,7 @@ theme: /
         
         state: CumulativeFunds
             a: По теме накопительного фонда могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
                 {"text": "Презентация Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Накопительный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
@@ -95,7 +95,7 @@ theme: /
     # ОТКРЫТЫЕ ФОНДЫ АКЦИЙ
     state: OpenStocksFunds
         a: Какой вид фондов Вас интересует? 
-        buttons:
+        inlineButtons:
             "Фонд Новые возможности" -> /OpenStocksFunds/NewHopesFund
             "Фонд акций с выплатой дохода" -> /OpenStocksFunds/IncomeStocksFunds
             "Фонд российских акций" -> /OpenStocksFunds/RussianFund
@@ -105,7 +105,7 @@ theme: /
         
         state: NewHopesFund
             a: По фонду "Новые возможности" могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Новые возможности", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Новые возможности", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Новые возможности", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -115,7 +115,7 @@ theme: /
         
         state: IncomeStocksFunds
             a: По фонду "Акции с выплатой дохода" могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд акций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд акций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд акций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -125,7 +125,7 @@ theme: /
         
         state: RussianFund
             a: По фонду российских акций могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд российских акций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд российских акций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд российских акций", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -135,7 +135,7 @@ theme: /
         
         state: NaturalSourcesFunds
             a: По фонду природных ресурсов могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Природные ресурсы", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Природные ресурсы", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Природные ресурсы", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -146,7 +146,7 @@ theme: /
     #ОТКРЫТЫЕ ФОНДЫ СМЕШАННЫХ ИНВЕСТИЦИЙ
     state: MixedInvestmentsFunds
         a: Какой вид фондов Вас интересует? 
-        buttons:
+        inlineButtons:
             "Фонд смешанный с выплатой дохода" -> /MixedInvestmentsFunds/MixedInvestmentsIncome
             "Фонд взвешенный с выплатой дохода" -> /MixedInvestmentsFunds/WeightedSectorFund
             "Фонд Локальный" -> /MixedInvestmentsFunds/LocalFund
@@ -156,7 +156,7 @@ theme: /
         
         state: MixedInvestmentsIncome
             a: По cмешанному фонду с выплатой доходов могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд смешанный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд смешанный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд смешанный с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -166,7 +166,7 @@ theme: /
         
         state: WeightedSectorFund
             a: По взвешенному фонду с выплатой доходов могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд взвешенный с выплатой дохода", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд взвешенный с выплатой дохода", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд взвешенный с выплатой дохода", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -176,7 +176,7 @@ theme: /
         
         state: LocalFund
             a: По локальному фонду могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Локальный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Локальный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Локальный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -186,7 +186,7 @@ theme: /
         
         state: BalancedFund
             a: По фонду "Сбалансированный" могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Сбалансированный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Сбалансированный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Сбалансированный", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -197,7 +197,7 @@ theme: /
     #ЗАКРЫТЫЕ ФОНДЫ
     state: ClosedFunds
         a: Какой вид фондов Вас интересует? 
-        buttons:
+        inlineButtons:
             "Фонд Современный Арендный бизнес 2" -> /ClosedFunds/RentBusiness2
             "Фонд Современный 6" -> /ClosedFunds/Modern6
             "Назад" -> /OpenEndedMutualFunds
@@ -205,7 +205,7 @@ theme: /
     
         state: RentBusiness2
             a: По фонду "Cовременный Арендный бизнес 2" могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Современный Арендный бизнес 2", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Современный Арендный бизнес 2", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Современный Арендный бизнес 2", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -215,7 +215,7 @@ theme: /
         
         state: Modern6
             a: По фонду "Современный 6" могу предложить Вам следующие виды документов
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -227,7 +227,7 @@ theme: /
     # БИРЖЕВЫЕ ФОНДЫ
     state: ExchangeTradedFunds
         a: Выберите категорию среди биржевых фондов
-        buttons:
+        inlineButtons:
             "Биржевые фонды акций" -> /StockStonksFunds
             "Биржевые фонды облигаций" -> /StockBondsFunds
             "Биржевые фонды денежного рынка" -> /OpenMoneyFunds
@@ -239,7 +239,7 @@ theme: /
     # БИРЖЕВЫЕ ФОНДЫ АКЦИЙ
     state: StockStonksFunds
         a: Какой фонд в категории "Биржевые фонды акций" Вас интересует?
-        buttons:
+        inlineButtons:
             "Фонд Индекс МосБиржи IPO - SIPO" -> /OpenStocksFunds/IPO-SIPOFund
             "Фонд Акции средней и малой капитализации - SBSC" -> /OpenStocksFunds/SBSCFund
             "Фонд Топ Российских акций - SBMX" -> /OpenStocksFunds/SMBXFund
@@ -250,7 +250,7 @@ theme: /
         
         state: IPO-SIPOFund
             a: По фонду Индекса МосБиржи IPO - SIPO могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -260,7 +260,7 @@ theme: /
         
         state: SBSCFund
             a: По фонду акций средней и малой капитализации - SBSC могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -270,7 +270,7 @@ theme: /
         
         state: SMBXFund
             a: По фонду Топ Российских акций - SBMX могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -280,7 +280,7 @@ theme: /
         
         state: SBRIFund
             a: По фонду отчественных инвестиций SBRI могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -290,7 +290,7 @@ theme: /
         
         state: SBHIFund
             a: По фонду халяльных инвестиций могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -301,7 +301,7 @@ theme: /
     #БИРЖЕВЫЕ ФОНДЫ ОБЛИГАЦИЙ
     state: StockBondsFunds
         a: Какой фонд в категории "Биржевые фонды облигаций" Вас интересует?
-        buttons:
+        inlineButtons:
             "Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)" -> /OpenBondsFunds/SBBYFund
             "Фонд Долгосрочные гособлигации - SBLB" -> /OpenBondsFunds/SBLBFund
             "Фонд Корпоративные облигации - SBRB" -> /OpenBondsFunds/SBRBFund
@@ -313,7 +313,7 @@ theme: /
         
         state: SBBYFund
             a: Насчет фонда "Инструменты в юанях - SBBY" могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -323,7 +323,7 @@ theme: /
         
         state: SBLBFund
             a: По фонду "Долгосрочные гособлигации - SBLB" могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -333,7 +333,7 @@ theme: /
         
         state: SBRBFund
             a: По фонду "Корпоративные облигации - SBRB" могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Корпоративные облигации - SBRB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -343,7 +343,7 @@ theme: /
         
         state: SBGBFund
             a: По фонду "Государственные облигации - SBGB" могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -353,7 +353,7 @@ theme: /
         
         state: SBCBFund
             a: По фонду "Валютных Облигаций - SBCB" могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -363,7 +363,7 @@ theme: /
         
         state: SBFRFund
             a: По фонду "Облигации с переменным купоном - SBFR" могу предложить Вам следующие виды документов
-            buttons: 
+            inlineButtons: 
                 {"text": "Информационный лист Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -374,7 +374,7 @@ theme: /
     #БИРЖЕВЫЕ ФОНДЫ ДЕНЕЖНЫХ РЫНКОВ
     state: OpenMoneyFunds
         a: Какой вид биржевых фондов денежных рынков Вас интересует? 
-        buttons:
+        inlineButtons:
             "Фонд Сберегательный - SBMM" -> /OpenMoneyFunds/SBMMFund
             "Фонд Сберегательный в юанях - SBCN" -> /OpenMoneyFunds/SBCNFund
             "Назад" -> /ExchangeTradedFunds
@@ -382,7 +382,7 @@ theme: /
         
         state: SBMMFund
             a: По поводу фонда "Сберегательный - SBMM" могу предсотавить следующие документы
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -392,7 +392,7 @@ theme: /
         
         state: SBCNFund
             a: По поводу фонда cберегательный в юанях могу предсотавить следующие документы
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -403,7 +403,7 @@ theme: /
     #БИРЖЕВЫЕ ФОНДЫ ТОВАРНЫХ РЫНКОВ
     state: SBGDFund
         a: Среди биржевых фондов товарных рынков имеется фонд "Доступное золото - SBGD". Для него могу предложить следующие документы
-        buttons:
+        inlineButtons:
             {"text": "Информационный лист Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Презентация Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Информационный лист_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -414,7 +414,7 @@ theme: /
     #БИРЖЕВЫЕ СМАРТ-ФОНДЫ
     state: SmartFund5
         a: Для биржевых смарт-фондов могу предложить следующие документы
-        buttons:
+        inlineButtons:
             {"text": "Информационный лист Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Презентация Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Информационный лист_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -425,7 +425,7 @@ theme: /
     #ИНДИВИДУАЛЬНЫЙ ИНВЕСТИЦИОННЫЙ СЧЕТ (ИИС) 
     state: IIS 
         a: По теме индивидуального инвестиционного счета (ИИС) могу предложить следующие документы по группе пятилетних стратегий
-        buttons:
+        inlineButtons:
             {"text": "Информационный лист Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Презентация Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             {"text": "Информационный лист_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -436,7 +436,7 @@ theme: /
     #ДОВЕРИТЕЛЬНОЕ УПРАВЛЕНИЕ 
     state: RubleStrategies
         a: Могу предложить Вам следующие виды стратегий по доверительному управлению
-        buttons:
+        inlineButtons:
             "Халяльные инвестиции" -> /RubleStrategies/HalalInvestments
             "Модельные портфели 5" -> /RubleStrategies/ModelPortfolio5
             "Дивидендные акции" -> /RubleStrategies/Dividends
@@ -445,7 +445,7 @@ theme: /
         
         state: HalalInvestments 
             a: По теме халяльных инвестиций могу предложить следующие документы
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -455,7 +455,7 @@ theme: /
         
         state: ModelPortfolio5 
             a: По теме модельного портфеля 5 могу предложить следующие документы
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
@@ -465,7 +465,7 @@ theme: /
         
         state: Dividends 
             a: По теме дивидендных акций могу предложить следующие документы
-            buttons:
+            inlineButtons:
                 {"text": "Информационный лист Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Дивидендные акции5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
