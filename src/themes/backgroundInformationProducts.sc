@@ -218,7 +218,7 @@ theme: /
                 {"text": "Презентация Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Информационный лист_Сбер1 Фонд Современный 6", "url":  "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
                 {"text": "Презентация_Сбер1 Фонд Современный 6", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
-                 "Назад" -> /ClosedFunds
+                "Назад" -> /ClosedFunds
             timeout: /Start/WhatElse || interval = "30 seconds"
     
     
