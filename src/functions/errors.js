@@ -3,7 +3,6 @@ init:
     
 init: 
     bind("onScriptError", function($context) {
-        $session.mistake = "onScriptError"
         $mail.send({
             from: "just-alarm@unistar.ru",
             to: ["a.polyakov@unistar.ru"],
@@ -19,7 +18,6 @@ init:
 
 init:
     bind("onAnyError", function($context) {
-        $session.mistake = "onAnyError"
         $mail.send({
             from: "just-alarm@unistar.ru",
             to: ["a.polyakov@unistar.ru"],
