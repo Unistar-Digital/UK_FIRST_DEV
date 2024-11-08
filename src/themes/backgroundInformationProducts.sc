@@ -4,6 +4,7 @@ theme: /
         buttons:
             "Какие есть продукты?" -> /Products
             "Какие документы нужны для старта инвестирования?" -> /Documents1
+            "Назад" -> /Start/MainMenu
         timeout: /Start/Timeout || interval = "1 hour"
     
     state: Products
@@ -13,6 +14,7 @@ theme: /
             "Биржевые фонды" -> /ExchangeTradedFunds
             "Индивидуальный инвестиционный счет" -> /IIS
             "Доверительное управление" -> /RubleStrategies
+            "Назад" -> /BackgroundInformationProducts
         timeout: /Start/Timeout || interval = "1 hour"
     
     #ОТКРЫТЫЕ ПАЕВЫЕ ФОНДЫ
@@ -23,6 +25,7 @@ theme: /
             "Открытые фонды акций" -> /OpenStocksFunds
             "Открытые фонды смешанных инвестиций" -> /MixedInvestmentsFunds
             "Закрытые фонды" -> /ClosedFunds
+            "Назад" -> /Products
         timeout: /Start/Timeout || interval = "1 hour"
     
     #ОТКРЫТЫЕ ФОНДЫ ОБЛИГАЦИЙ
@@ -34,15 +37,17 @@ theme: /
             "Фонд российских облигаций" -> /OpenBondsFunds/RussianBondFund
             "Фонд Валютные сбережения" -> /OpenBondsFunds/CurrencyBond
             "Фонд Накопительный" -> /OpenBondsFunds/CumulativeFunds
+            "Назад" -> /OpenEndedMutualFunds
         timeout: /Start/Timeout || interval = "1 hour"
 
         state: IncomePayingBondFund
             a: По теме облигаций с выплатой дохода я могу предложить Вам следующие виды документов
             buttons:
-                {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"} 
-                {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"} 
-                {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"} 
+                {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                "Назад" -> /OpenBondsFunds
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: ConservativeIncomeBondFund
@@ -225,46 +230,46 @@ theme: /
         state: IPO-SIPOFund
             a: По фонду Индекса МосБиржи IPO - SIPO могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Индекс МосБиржи IPO - SIPO", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBSCFund
             a: По фонду акций средней и малой капитализации - SBSC могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Акции средней и малой капитализации - SBSC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SMBXFund
             a: По фонду Топ Российских акций - SBMX могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Топ Российских акций - SBMXC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Топ Российских акций - SBMX", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Топ Российских акций - SBMXC", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBRIFund
             a: По фонду отчественных инвестиций SBRI могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Ответственные инвестиции - SBRI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBHIFund
             a: По фонду халяльных инвестиций могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Халяльные инвестиции - SBHI", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
     #БИРЖЕВЫЕ ФОНДЫ ОБЛИГАЦИЙ
@@ -282,55 +287,55 @@ theme: /
         state: SBBYFund
             a: Насчет фонда "Инструменты в юанях - SBBY" могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Инструменты в юанях - SBBY (ранее - Фонд Облигации в юанях)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBLBFund
             a: По фонду "Долгосрочные гособлигации - SBLB" могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBRBFund
             a: По фонду "Корпоративные облигации - SBRB" могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Корпоративные облигации - SBRB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Корпоративные облигации - SBRB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Долгосрочные гособлигации - SBLB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBGBFund
             a: По фонду "Государственные облигации - SBGB" могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Государственные облигации - SBGB", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBCBFund
             a: По фонду "Валютных Облигаций - SBCB" могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Валютных Облигаций - SBCB (ранее - Фонд Российские еврооблигации)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBFRFund
             a: По фонду "Облигации с переменным купоном - SBFR" могу предложить Вам следующие виды документов
             buttons: 
-                {"text": "Информационный лист Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Облигации с переменным купоном - SBFR)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Облигации с переменным купоном - SBFR", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Облигации с переменным купоном - SBFR)", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
     #БИРЖЕВЫЕ ФОНДЫ ДЕНЕЖНЫХ РЫНКОВ
@@ -344,49 +349,49 @@ theme: /
         state: SBMMFund
             a: По поводу фонда "Сберегательный - SBMM" могу предсотавить следующие документы
             buttons:
-                {"text": "Информационный лист Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Сберегательный - SBMM", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: SBCNFund
             a: По поводу фонда cберегательный в юанях могу предсотавить следующие документы
             buttons:
-                {"text": "Информационный лист Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Фонд Сберегательный в юанях - SBCN", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
     
     #БИРЖЕВЫЕ ФОНДЫ ТОВАРНЫХ РЫНКОВ
     state: SBGDFund
         a: Среди биржевых фондов товарных рынков имеется фонд "Доступное золото - SBGD". Для него могу предложить следующие документы
         buttons:
-            {"text": "Информационный лист Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Презентация Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Информационный лист_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Презентация_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+            {"text": "Информационный лист Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Презентация Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Информационный лист_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Презентация_Сбер1 Фонд Доступное золото - SBGD", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
         timeout: /Start/WhatElse || interval = "30 seconds"
     
     #БИРЖЕВЫЕ СМАРТ-ФОНДЫ
     state: SmartFund5
         a: Для биржевых смарт-фондов могу предложить следующие документы
         buttons:
-            {"text": "Информационный лист Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Презентация Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Информационный лист_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Презентация_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+            {"text": "Информационный лист Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Презентация Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Информационный лист_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Презентация_Сбер1 Биржевые смарт фонды", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
         timeout: /Start/WhatElse || interval = "30 seconds"
     
     #ИНДИВИДУАЛЬНЫЙ ИНВЕСТИЦИОННЫЙ СЧЕТ (ИИС) 
     state: IIS 
         a: По теме индивидуального инвестиционного счета (ИИС) могу предложить следующие документы по группе пятилетних стратегий
         buttons:
-            {"text": "Информационный лист Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Презентация Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Информационный лист_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-            {"text": "Презентация_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+            {"text": "Информационный лист Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Презентация Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Информационный лист_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+            {"text": "Презентация_Сбер1 Группа 5-ти летних стратегий ИИС", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
         timeout: /Start/WhatElse || interval = "30 seconds"
     
     #ДОВЕРИТЕЛЬНОЕ УПРАВЛЕНИЕ 
@@ -401,28 +406,28 @@ theme: /
         state: HalalInvestments 
             a: По теме халяльных инвестиций могу предложить следующие документы
             buttons:
-                {"text": "Информационный лист Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Халяльные инвестиции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: ModelPortfolio5 
             a: По теме модельного портфеля 5 могу предложить следующие документы
             buttons:
-                {"text": "Информационный лист Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Модельные портфели 5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
         
         state: Dividends 
             a: По теме дивидендных акций могу предложить следующие документы
             buttons:
-                {"text": "Информационный лист Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Информационный лист_Сбер1 Дивидендные акции5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
-                {"text": "Презентация_Сбер1 Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987", "force_reply": "true"}
+                {"text": "Информационный лист Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Дивидендные акции5", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Презентация_Сбер1 Дивидендные акции", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
             timeout: /Start/WhatElse || interval = "30 seconds"
 
     #ДОКУМЕНТЫ ДЛЯ СТАРТА ИНВЕСТИРОВАНИЯ
