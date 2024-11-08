@@ -15,7 +15,6 @@ theme: /
             "Индивидуальный инвестиционный счет" -> /IIS
             "Доверительное управление" -> /RubleStrategies
             "Назад" -> /BackgroundInformationProducts
- 
         timeout: /Start/Timeout || interval = "1 hour"
     
     #ОТКРЫТЫЕ ПАЕВЫЕ ФОНДЫ
