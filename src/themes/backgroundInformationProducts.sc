@@ -5,88 +5,51 @@ theme: /
             "Какие есть продукты?" -> /Products
             "Какие документы нужны для старта инвестирования?" -> /Documents1
             "Назад" -> /Start/MainMenu
-        #script:
-        #    $reactions.buttons([
-        #        {text: "Какие есть продукты?", transition: "/Products"}, 
-        #        {text: "Какие документы нужны для старта инвестирования?", transition: "/Documents1"}, 
-        #        {text: "Назад", transition: "/Start/MainMenu"}
-        #    ])
         timeout: /Start/Timeout || interval = "1 hour"
     
     state: Products
-        a: Могу проконсультировать Вас по следующим тематикам 👉
-        #buttons:
-        #    "Открытые паевые фонды" -> /OpenEndedMutualFunds
-        #    "Биржевые фонды" -> /ExchangeTradedFunds
-        #    "Индивидуальный инвестиционный счет" -> /IIS
-        #    "Доверительное управление" -> /RubleStrategies
-        #    "Назад" -> /BackgroundInformationProducts
-        script:
-            $reactions.buttons([
-                {text: "Открытые паевые фонды", transition: "/OpenEndedMutualFunds"}, 
-                {text: "Биржевые фонды", transition: "/ExchangeTradedFunds"}, 
-                {text: "Индивидуальный инвестиционный счет", transition: "/IIS"}, 
-                {text: "Доверительное управление", transition: "/RubleStrategies"}, 
-                {text: "Назад", transition: "/BackgroundInformationProducts"}
-            ]) 
+        a: Могу проконсультировать Вас по следующим тематикам 👇
+        inlineButtons:
+            "Открытые паевые фонды" -> /OpenEndedMutualFunds
+            "Биржевые фонды" -> /ExchangeTradedFunds
+            "Индивидуальный инвестиционный счет" -> /IIS
+            "Доверительное управление" -> /RubleStrategies
+            "Назад" -> /BackgroundInformationProducts
+ 
         timeout: /Start/Timeout || interval = "1 hour"
     
     #ОТКРЫТЫЕ ПАЕВЫЕ ФОНДЫ
     state: OpenEndedMutualFunds
         a: Выберите категорию среди открытых паевых фондов 
-        #buttons:
-        #    "Открытые фонды облигаций" -> /OpenBondsFunds
-        #    "Открытые фонды акций" -> /OpenStocksFunds
-        #    "Открытые фонды смешанных инвестиций" -> /MixedInvestmentsFunds
-        #    "Закрытые фонды" -> /ClosedFunds
-        #    "Назад" -> /Products
-        script:
-            $reactions.buttons([
-                {text: "Открытые фонды облигаций", transition: "/OpenBondsFunds"}, 
-                {text: "Открытые фонды акций", transition: "/OpenStocksFunds"}, 
-                {text: "Открытые фонды смешанных инвестиций", transition: "/MixedInvestmentsFunds"}, 
-                {text: "Закрытые фонды", transition: "/ClosedFunds"}, 
-                {text: "Назад", transition: "/Products"}
-            ]) 
+        inlineButtons:
+            "Открытые фонды облигаций" -> /OpenBondsFunds
+            "Открытые фонды акций" -> /OpenStocksFunds
+            "Открытые фонды смешанных инвестиций" -> /MixedInvestmentsFunds
+            "Закрытые фонды" -> /ClosedFunds
+            "Назад" -> /Products
         timeout: /Start/Timeout || interval = "1 hour"
     
     #ОТКРЫТЫЕ ФОНДЫ ОБЛИГАЦИЙ
     state: OpenBondsFunds
         a: Какой вид фондов Вас интересует? 
-        #buttons:
-        #    "Фонд облигаций с выплатой дохода" -> /OpenBondsFunds/IncomePayingBondFund
-        #    "Фонд консервативный с выплатой дохода" -> /OpenBondsFunds/ConservativeIncomeBondFund
-        #    "Фонд российских облигаций" -> /OpenBondsFunds/RussianBondFund
-        #    "Фонд Валютные сбережения" -> /OpenBondsFunds/CurrencyBond
-        #    "Фонд Накопительный" -> /OpenBondsFunds/CumulativeFunds
-        #    "Назад" -> /OpenEndedMutualFunds
-        script:
-            $reactions.buttons([
-                {text: "Фонд облигаций с выплатой дохода", transition: "/OpenBondsFunds/IncomePayingBondFund"}, 
-                {text: "Фонд консервативный с выплатой дохода", transition: "/OpenBondsFunds/ConservativeIncomeBondFund"}, 
-                {text: "Фонд российских облигаций", transition: "/OpenBondsFunds/RussianBondFund"}, 
-                {text: "Фонд Валютные сбережения", transition: "/OpenBondsFunds/CurrencyBond"}, 
-                {text: "Фонд Накопительный", transition: "/OpenBondsFunds/CumulativeFunds"}, 
-                {text: "Назад", transition: "/OpenEndedMutualFunds"}
-            ])
+        inlineButtons:
+            "Фонд облигаций с выплатой дохода" -> /OpenBondsFunds/IncomePayingBondFund
+            "Фонд консервативный с выплатой дохода" -> /OpenBondsFunds/ConservativeIncomeBondFund
+            "Фонд российских облигаций" -> /OpenBondsFunds/RussianBondFund
+            "Фонд Валютные сбережения" -> /OpenBondsFunds/CurrencyBond
+            "Фонд Накопительный" -> /OpenBondsFunds/CumulativeFunds
+            "Назад" -> /OpenEndedMutualFunds
         timeout: /Start/Timeout || interval = "1 hour"
 
         state: IncomePayingBondFund
             a: По теме облигаций с выплатой дохода я могу предложить Вам следующие виды документов
-            #buttons:
-            #    {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-            #    {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
-            #    {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-            #   {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
-            #   "Назад" -> /OpenBondsFunds
-            script:
-                $reactions.buttons([
-                    {text: "Информационный лист Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"},
-                    {text: "Презентация Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"},
-                    {text: "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}, 
-                    {text: "Презентация_Сбер1 Фонд облигаций с выплатой дохода", url: "https://first-am.ru/?ysclid=m35k4y6ov0984914987"},
-                    {text: "Назад", transition: "/OpenBondsFunds"}
-                ]) 
+            inlineButtons:
+                {"text": "Информационный лист Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+                {"text": "Презентация Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"}
+                {"text": "Информационный лист_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+               {"text": "Презентация_Сбер1 Фонд облигаций с выплатой дохода", "url": "https://first-am.ru/?ysclid=m35k4y6ov0984914987"} 
+               "Назад" -> /OpenBondsFunds
+           
             timeout: /Start/WhatElse || interval = "30 seconds" 
         
         state: ConservativeIncomeBondFund
