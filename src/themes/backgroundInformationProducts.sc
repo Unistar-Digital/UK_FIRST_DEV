@@ -1,16 +1,16 @@
 theme: /
     state: BackgroundInformationProducts
         a: Что Вас интересует? 🙂 
-        #buttons:
-        #    "Какие есть продукты?" -> /Products
-        #    "Какие документы нужны для старта инвестирования?" -> /Documents1
-        #    "Назад" -> /Start/MainMenu
-        script:
-            $reactions.buttons([
-                {text: "Какие есть продукты?", transition: "/Products"}, 
-                {text: "Какие документы нужны для старта инвестирования?", transition: "/Documents1"}, 
-                {text: "Назад", transition: "/Start/MainMenu"}
-            ])
+        inlineButtons:
+            "Какие есть продукты?" -> /Products
+            "Какие документы нужны для старта инвестирования?" -> /Documents1
+            "Назад" -> /Start/MainMenu
+        #script:
+        #    $reactions.buttons([
+        #        {text: "Какие есть продукты?", transition: "/Products"}, 
+        #        {text: "Какие документы нужны для старта инвестирования?", transition: "/Documents1"}, 
+        #        {text: "Назад", transition: "/Start/MainMenu"}
+        #    ])
         timeout: /Start/Timeout || interval = "1 hour"
     
     state: Products
