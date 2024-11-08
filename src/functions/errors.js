@@ -13,7 +13,6 @@ init:
             user: "just-alarm@unistar.ru",
             password: "$SMTP_password"})
     });
-    $reactions.transition("/Start/Operator");
 
 init:
     bind("onAnyError", function($context) {
@@ -27,4 +26,3 @@ init:
             user: "just-alarm@unistar.ru",
             password: "$SMTP_password"})
     })
-    $reactions.transition("/Start/Operator")
