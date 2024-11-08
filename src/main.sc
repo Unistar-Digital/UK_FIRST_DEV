@@ -33,7 +33,7 @@ theme: /Start
             a: У Вас есть еще вопросы? ❓
             a: У Вас остались дополнительные вопросы? ❔
             a: У Вас остались еще вопросы? ❓
-        buttons:
+        inlineButtons:
             "Да" -> /Start/MainMenu
             "Нет" -> /Start/Final
         timeout: /Start/Timeout || interval = "1 hour"
