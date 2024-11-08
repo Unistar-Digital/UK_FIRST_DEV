@@ -5,7 +5,7 @@ theme: /Start
         script:
             $jsapi.startSession(); 
         a: Здравствуйте, я электронная помощница компании «УК Первая»😊
-        timeout: /Disclamer/Disclamer || interval = "1 second"
+        timeout: /Disclamer/Disclamer1 || interval = "1 second"
     
     state: MainMenu
         random:
