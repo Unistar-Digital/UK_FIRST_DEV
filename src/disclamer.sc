@@ -20,7 +20,7 @@ theme: /Disclamer
         timeout: /Disclamer/DisclamerCheck || interval = "10 seconds"
     
     state: DisclamerCheck
-        a: Подтвердите, что вы ознакомились с  предоставленной информацией
+        a: Подтвердите, что вы ознакомились с предоставленной информацией
         buttons:
             "Ознакомился(-лась)" -> /Start/MainMenu
             "Не ознакомился(-лась)" -> /Start/NoDisclamer
